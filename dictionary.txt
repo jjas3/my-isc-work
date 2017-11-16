@@ -1,0 +1,17 @@
+# working with dictionaries
+
+band = ["mel", "geri", "victoria", "mel", "emma"]
+
+#empty dictionary
+counts={}
+
+#loops over each of the members of the band, if the name (key) hasn't been seen before it adds it to the dictionary with a count (value) of 1. If it has been seen before it increases the value by 1
+for i in band:
+    if i not in counts:
+        counts[i]=1
+    else:
+        counts[i] +=1
+for i in counts:
+    print i, counts[i]
+
+    
